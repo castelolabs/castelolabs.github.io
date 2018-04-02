@@ -1,0 +1,26 @@
+{
+  "name": "castelolabs.github.io",
+  "version": "1.0.0",
+  "description": "Castelo Labs Community",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castelolabs/castelolabs.github.io.git"
+  },
+  "keywords": [
+    "castelolabs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/castelolabs/castelolabs.github.io/issues"
+  },
+  "homepage": "https://github.com/castelolabs/castelolabs.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1"
+  }
+}
