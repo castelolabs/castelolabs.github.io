@@ -1,8 +1,10 @@
 $black: #272822;
 $white: #F8F8F2;
 $green: #A6E22E;
-$font: 'Montserrat', sans-serif;
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+$darkgreen: #8CC21F;
+$red: #B30F4F;
+$font: 'Source Code Pro', monospace;
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700');
 
 body{
     background: url('../img/background.jpg') no-repeat center center fixed;
@@ -12,7 +14,13 @@ body{
     -ms-background-size: cover;
     -o-background-size: cover;
 }
+.container{
+  display: block;
+  position: relative;
+  top: 10vh;
+}
 .main{
+    display: block;
     position: relative;
     top: 10vh;
 }
@@ -29,22 +37,24 @@ body{
     font-family: $font;
     font-weight: 700;
     font-size: 2.8em;
-    text-transform: uppercase;
     color: $white;
 }
 .text-content{
     color: $white;
     font-family: $font;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 1.1em;
 }
 .location{
-    color: $white;  
+    color: $white;
     font-family: $font;
-    font-weight: 300;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.1em;
 }
 .button{
+    display: block;
+    position: relative;
     font-family: $font;
     font-weight: 300;
     font-size: 1.2em;
@@ -52,7 +62,63 @@ body{
     text-transform: uppercase;
     text-align: center;
     padding: 10px 20px;
-    border: 1px solid $green;
-    border-radius: 5px;
+    border: 2px solid $green;
+    border-radius: 3px;
     color: $green;
+    font-weight: bold;
+    transition: 0.6s;
+    position: relative;
+}
+.speaker{
+  clear: both;
+  display: block;
+  width: 100%;
+  float: none;
+  display: flex;
+}
+.talk{
+  text-align: center;
+  padding: 5%;
+  width: 100vh;
+  font-family: $font;
+  color: white;
+
+  a.link{
+    padding: 1%;
+    text-decoration: none;
+    color: $red;
+    background-color: white;
+  }
+  a.link:hover{
+    border-radius: 0px;
+    transition: none;
+  }
+  .speaker-img{
+    border-radius: 50%;
+    transition: 0.7s;
+    width: 50%;
+  }
+  .speaker-img:hover{
+    width: 55%;
+  }
+  .talk-person{
+    color: white;
+  }
+  .talk-title{
+    font-weight: 400;
+  }
+  .talk-bio{
+
+  }
+  .link{
+    color: white;
+  }
+}
+a:hover{
+  color: $white;
+  background-color: $green;
+  border-radius: 6px;
+}
+.equal{
+  color: $red;
 }
