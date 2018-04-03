@@ -57,7 +57,7 @@ body {
   padding: 10px 20px;
   border: 2px solid #A6E22E;
   border-radius: 3px;
-  color: #A6E22E;
+  color: #F8F8F2;
   font-weight: bold;
   transition: 0.6s;
   position: relative; }
@@ -97,8 +97,9 @@ body {
     color: white; }
 
 a:hover {
-  color: #F8F8F2;
-  background-color: #A6E22E;
+  color: #8CC21F;
+  background-color: #F8F8F2;
+  border-color: #F8F8F2;
   border-radius: 6px; }
 
 .equal {

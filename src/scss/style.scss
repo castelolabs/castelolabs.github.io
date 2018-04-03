@@ -64,7 +64,7 @@ body{
     padding: 10px 20px;
     border: 2px solid $green;
     border-radius: 3px;
-    color: $green;
+    color: $white;
     font-weight: bold;
     transition: 0.6s;
     position: relative;
@@ -115,8 +115,9 @@ body{
   }
 }
 a:hover{
-  color: $white;
-  background-color: $green;
+  color: $darkgreen;
+  background-color: $white;
+  border-color: $white;
   border-radius: 6px;
 }
 .equal{
