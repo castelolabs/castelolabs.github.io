@@ -108,9 +108,10 @@ a:hover {
 .equal {
   color: #B30F4F; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .speaker {
     display: block;
     margin-top: 30px; }
     .speaker .talk {
-      margin-top: 30px; } }
+      margin-top: 30px;
+      width: 90%; } }
