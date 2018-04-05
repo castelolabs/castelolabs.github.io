@@ -121,12 +121,14 @@ body {
     line-height: 1.8em; }
   .talk .link {
     color: white; }
+  .talk .simple-link {
+    color: #F8F8F2; }
 
 a.button-participe:hover {
   color: #B30F4F;
   background-color: #F8F8F2;
   font-family: "Roboto";
-  border-color: #B30F4F;
+  border-color: #F8F8F2;
   border-radius: 6px; }
 
 .equal {

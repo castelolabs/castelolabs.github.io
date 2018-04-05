@@ -157,12 +157,15 @@ body {
   .link {
     color: white;
   }
+  .simple-link{
+    color: $white;
+  }
 }
 a.button-participe:hover {
   color: $red;
   background-color: $white;
   font-family: $textFont;
-  border-color: $red;
+  border-color: $white;
   border-radius: 6px;
 }
 .equal {
