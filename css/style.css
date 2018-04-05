@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
 @-ms-viewport {
   width: device-width; }
 
@@ -30,20 +31,37 @@ body {
   margin-right: auto; }
 
 .title {
-  font-family: "Source Code Pro", monospace;
   font-weight: 700;
-  font-size: 2.8em;
+  font-size: 3em;
+  font-family: "Roboto";
   color: #F8F8F2; }
 
 .text-content {
   color: #F8F8F2;
-  font-family: "Source Code Pro", monospace;
   font-weight: 700;
+  font-family: "Roboto";
+  font-style: normal;
+  text-decoration: none;
   font-size: 1.1em; }
+
+.code-highlight-infos {
+  background: #000000;
+  padding: 15px;
+  width: 60%;
+  margin: 0 auto;
+  font-family: "Source Code Pro", monospace; }
+  .code-highlight-infos .text-content {
+    font-weight: 500;
+    font-family: "Source Code Pro", monospace; }
+  .code-highlight-infos .code-purple {
+    color: #C679DD; }
+  .code-highlight-infos .code-red {
+    color: #DF6A73; }
+  .code-highlight-infos .code-green {
+    color: #90C378; }
 
 .location {
   color: #F8F8F2;
-  font-family: "Source Code Pro", monospace;
   font-weight: 700;
   font-style: normal;
   font-size: 1.1em; }
@@ -51,11 +69,11 @@ body {
 .button {
   display: block;
   position: relative;
-  font-family: "Source Code Pro", monospace;
   font-weight: 300;
   font-size: 1.2em;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: "Roboto";
   text-align: center;
   padding: 10px 20px;
   border: 2px solid #B30F4F;
@@ -70,38 +88,44 @@ body {
   display: block;
   width: 100%;
   float: none;
+  font-family: "Roboto";
   display: flex; }
 
 .talk {
   text-align: center;
   padding: 5%;
   width: 100vh;
-  font-family: "Source Code Pro", monospace;
   color: white; }
   .talk a.link {
     padding: 1%;
     text-decoration: none;
     color: #B30F4F;
+    font-family: "Roboto";
     background-color: white; }
   .talk a.link:hover {
     border-radius: 0px;
+    font-family: "Roboto";
     transition: none; }
   .talk .speaker-img {
     border-radius: 50%;
     transition: 0.3s;
     width: 50%; }
   .talk .speaker-img:hover {
-    width: 55%; }
+    width: 55%;
+    cursor: pointer; }
   .talk .talk-person {
     color: white; }
   .talk .talk-title {
     font-weight: 400; }
+  .talk .talk-bio {
+    line-height: 1.8em; }
   .talk .link {
     color: white; }
 
-a:hover {
+a.button-participe:hover {
   color: #B30F4F;
   background-color: #F8F8F2;
+  font-family: "Roboto";
   border-color: #B30F4F;
   border-radius: 6px; }
 
@@ -115,3 +139,11 @@ a:hover {
     .speaker .talk {
       margin-top: 30px;
       width: 90%; } }
+
+@media screen and (max-width: 600px) {
+  .code-highlight-infos {
+    width: 96%;
+    padding: 2%; }
+    .code-highlight-infos .text-content {
+      font-weight: 500;
+      font-size: 1  em; } }

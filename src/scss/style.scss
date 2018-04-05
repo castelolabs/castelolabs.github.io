@@ -4,8 +4,17 @@ $green: #A6E22E;
 $darkgreen: #8CC21F;
 $red: #B30F4F;
 
+$code: (
+  purple: #C679DD,
+  red: #DF6A73,
+  green: #90C378
+);
+
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700');
-$font: 'Source Code Pro', monospace;
+$codeFont: 'Source Code Pro', monospace;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+$textFont: 'Roboto';
 
 @-ms-viewport {
   width: device-width;
@@ -39,20 +48,47 @@ body {
     margin-right: auto
 }
 .title {
-    font-family: $font;
     font-weight: 700;
-    font-size: 2.8em;
+    font-size: 3em;
+    font-family: $textFont;
     color: $white;
 }
 .text-content {
     color: $white;
-    font-family: $font;
     font-weight: 700;
+    font-family: $textFont;
+    font-style: normal;
+    text-decoration: none;
     font-size: 1.1em;
 }
+
+.code-highlight-infos {
+  background: #000000;
+  padding: 15px;
+  width: 60%;
+  margin: 0 auto;
+  font-family: $codeFont;
+
+  .text-content {
+    font-weight: 500;
+    font-family: $codeFont;
+  }
+
+  .code-purple {
+    color: map-get($code, purple);
+  }
+
+  .code-red {
+    color: map-get($code, red);
+  }
+  .code-green {
+    color: map-get($code, green);
+  }
+
+}
+
 .location {
     color: $white;
-    font-family: $font;
     font-weight: 700;
     font-style: normal;
     font-size: 1.1em;
@@ -60,11 +96,11 @@ body {
 .button {
     display: block;
     position: relative;
-    font-family: $font;
     font-weight: 300;
     font-size: 1.2em;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: $textFont;
     text-align: center;
     padding: 10px 20px;
     border: 2px solid $red;
@@ -79,23 +115,25 @@ body {
   display: block;
   width: 100%;
   float: none;
+  font-family: $textFont;
   display: flex;
 }
 .talk {
   text-align: center;
   padding: 5%;
   width: 100vh;
-  font-family: $font;
   color: white;
 
   a.link {
     padding: 1%;
     text-decoration: none;
     color: $red;
+    font-family: $textFont;
     background-color: white;
   }
   a.link:hover {
     border-radius: 0px;
+    font-family: $textFont;
     transition: none;
   }
   .speaker-img {
@@ -105,6 +143,7 @@ body {
   }
   .speaker-img:hover {
     width: 55%;
+    cursor: pointer;
   }
   .talk-person {
     color: white;
@@ -113,15 +152,16 @@ body {
     font-weight: 400;
   }
   .talk-bio {
-
+    line-height: 1.8em;
   }
   .link {
     color: white;
   }
 }
-a:hover {
+a.button-participe:hover {
   color: $red;
   background-color: $white;
+  font-family: $textFont;
   border-color: $red;
   border-radius: 6px;
 }
@@ -136,6 +176,18 @@ a:hover {
     .talk {
       margin-top: 30px;
       width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .code-highlight-infos {
+    width: 96%;
+    padding: 2%;
+
+    .text-content {
+      font-weight: 500;
+      font-size: 1  em;
     }
   }
 }
