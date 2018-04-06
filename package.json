@@ -1,26 +1,19 @@
 {
-  "name": "castelolabs.github.io",
+  "name": "event-boituva",
   "version": "1.0.0",
-  "description": "Castelo Labs Community",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/castelolabs/castelolabs.github.io.git"
-  },
-  "keywords": [
-    "castelolabs"
-  ],
   "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/castelolabs/castelolabs.github.io/issues"
-  },
-  "homepage": "https://github.com/castelolabs/castelolabs.github.io#readme",
+  "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.2.1"
   }
 }

@@ -1,0 +1,223 @@
+@import './reset';
+@import './margin';
+@import './vars';
+@import './generic';
+
+header {
+    padding: 2rem 0;
+    color: #fff;
+    text-align: center;
+
+    h1 {
+        font-size: 3.5rem;
+        line-height: 3rem;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        width: 50%;
+        margin: 0 auto;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        color: #f9f9f9;
+        font-weight: 600;
+    }
+}
+
+.header__actions {
+    display: block;
+}
+
+a.header__button {
+    background: $button-action;
+    padding: 0.75rem 2rem;
+    display: inline-block;
+    color: #fff;
+    border: 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 0.2s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-right: 1.5rem;
+}
+
+.speakers {
+    position: relative;
+    width: 100%;
+    background: #fff;
+
+    &__speaker {
+        text-align: center;
+        padding: 1rem 1.5rem;
+        position: relative;
+        transition: 0.5s;
+        height: 100%;
+        background: #f3f3f3;
+        border-radius: 5px;
+
+        &:hover {
+            transform: scale(1.025);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12), 0 0 0 1px transparent;
+        }
+
+        .speaker__avatar {
+            img {
+                max-width: 200px;
+                border-radius: 100%;
+                position: relative;
+            }
+        }
+
+        .speaker__title {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 600;
+            color: $color-primary;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .speaker__company {
+            font-size: 1.1rem;
+            line-height: 1.1rem;
+        }
+
+        .speaker__description {
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .speaker__links {
+            a {
+                display: inline-block;
+                color: $button-action;
+                margin: 0 2px;
+
+                &:first-child {
+                    i{
+                        position: relative;
+                        top: 1px;
+                    }
+                }
+
+                i {
+                    color: $button-action;
+                    font-size: 1rem;
+                    padding: 5px;
+                    border-radius: 100%;
+
+                    &:hover {
+                        background: #ccc;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sponsorships {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 4rem 0;
+
+    &__sponsorship {
+        img {
+            margin: 0 auto;
+            display: block;
+            max-width: 100%;
+        }
+    }
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.timeline {
+    background: #f3f3f3;
+    padding: 3rem 0;
+    position: relative;
+    height: 100%;
+
+    &__item {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding-bottom: 2rem;
+
+        &:last-child {
+            .timeline__text {
+                &:after {
+                    height: 0;
+                }
+            }
+        }
+    }
+
+    &__hours {
+        width: auto;
+        display: inline-block;
+        float: left;
+        width: auto;
+        margin-top: 0.25rem;
+        font-weight: 700;
+        min-width: 72px;
+    }
+
+    &__divider {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        z-index: 2;
+        border: 5px solid #f3f3f3;
+        background: $color-primary;
+        margin-right: 2rem;
+        display: inline-block;
+        float: left;
+        border-radius: 100%;
+    }
+
+    &__text {
+        display: inline-block;
+        width: 400px;
+        background: $color-primary;
+        position: relative;
+        padding: 15px;
+        color: #fff;
+        font-size: 0.875rem;
+        letter-spacing: 0.5px;
+        border-radius: 10px;
+
+        b {
+            display: block;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 4px;
+            height: calc(100% + 2rem);
+            z-index: 1;
+            background: $color-primary;
+            position: absolute;
+            top: 2px;
+            left: -46px;
+        }
+    }
+}

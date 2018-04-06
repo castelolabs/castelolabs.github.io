@@ -1,90 +1,414 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="IFSP">
 
-        <title>Castelo labs</title>
-        <meta name="description" content="Página de divulgação do 2º meetup do castelo labs."/>
-        <meta name="author" content="Castelo Labs"/>
-        <link rel="base" href="castelolabs.github.io"/>
-        <link rel="canonical" href="castelolabs.github.io"/>
-        <meta name="robots" content="index/follow"/>
-        <meta name="googlebot" content="index/follow"/>
-        <meta name="theme-color" content=""/>
-        <meta name="msapplication-navbutton-color" content=""/>
-        <meta name="apple-mobile-web-app-status-bar-style" content=""/>
-        <!-- Schema.org markup for Google+ -->
-        <meta itemprop="name" content="Castelo labs"/>
-        <meta itemprop="description" content="Página de divulgação do 2º meetup do castelo labs."/>
-        <!-- markup for facebook -->
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Castelo labs"/>
-        <meta property="og:url" content="castelolabs.github.io"/>
-        <meta property="og:site_name" content="Castelo labs"/>
-        <meta property="og:description" content="Página de divulgação do 2º meetup do castelo labs."/>
-        <meta property="og:locale" content="pt_BR"/>
-        <meta property="og:image" content="https://i.imgur.com/w5ceGR4.jpg">
-        <meta property="og:image:type" content="image/jpeg">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="480">
-        <!-- markup for twitter -->
-        <meta name="twitter:card" content=""/>
-        <meta name="twitter:title" content="Castelo labs"/>
-        <meta name="twitter:description" content="Página de divulgação do 2º meetup do castelo labs."/>
-        <meta name="twitter:creator" content="Castelo Labs"/>
+    <!-- og:tag (compartilhamento em redes sociais) -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="URL_EVENT">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TITLE_PAGE">
+    <meta property="og:site_name" content="SITE_NAME">
+    <meta property="og:description" content="SAMPLE_DESCRIPTION">
+    <meta property="og:image" content="www.meusite.com.br/imagem.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <!-- pixels -->
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <section class="main">
-            <h1 class="title center-text">Castelo Labs</h1>
+    <title>Castelo Labs</title>
 
-            <div class="code-highlight-infos">
-                <p class="text-content">
-                    <span class="code-purple">var</span> <span class="code-red">proximaEdicao</span> = <span class="code-green">"12 de abril de 2018 às 19h00"</span>
-                </p>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+<body>
 
-                <address class="text-content"><span class="code-purple">var</span> <span class="code-red">local</span> = <span class="code-green">"Auditório do Instituto Federal de São Paulo - Campus Boituva"</span></address>
+    <header class="--bg-effect">
+        <div class="container">
+            <h1>Castelo Labs</h1>
 
-                <p class="text-content">
-                    <span class="code-purple">var</span> <span class="code-red">preco</span> = <span class="code-green">"free"</span>
-                </p>
+            <div class="m15"></div>
+
+            <h3>
+                12 de Abril de 2018 às 19:00 horas - Campus Boituva
+            </h3>
+
+            <div class="m10"></div>
+
+            <h2>
+                Segundo meetup de desenvolvimento de software que acontece no IFSP de Boituva, o evento será focado em pessoas que estão iniciando na carreira de desenvolvimento e que gostariam de se sentir mais inseridas na comunidade de software e no mercado de trabalho.
+            </h2>
+
+            <div class="m15"></div>
+
+            <div class="header__actions">
+                <a href="https://www.meetup.com/pt-BR/Castelo-Labs/events/249365878" target="_blank" class="header__button">
+                    Quero participar
+                </a>
+
+                <a target="_blank" class="header__button --button-disabled" disabled>
+                    Quero palestrar
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="m30"></div>
+
+    <!-- palestrantes -->
+    <div class="speakers">
+
+        <div class="container">
+
+            <div class="title__section">
+                Palestrantes confirmados
             </div>
 
-            <br><br>
-            <a class="button button-participe center-align" href="https://www.meetup.com/pt-BR/Castelo-Labs/events/249365878/" alt="Botão participe" target="_blank">Participe</a>
-              <section class="speaker">
-                <div class="talk">
-                  <img src="img/marcela.jpg" class="speaker-img">
-                  <h2 class="talk-person"><a href="https://github.com/marcelagodoy" class="link" target="_blank">Marcela Godoy</a></h2>
-                  Backend Developer at Eduzz
-                  <p class="talk-title">Talk <span class="equal"> = </span> Carreira de desenvolvedor.</p>
-                  <p class="talk-bio">Marcela Godoy é desenvolvedora Backend com graduação em Sistemas de Informação, já passou por várias áreas da TI, iniciando como Game Tester, pegando atalho pelo Design/UX e finalmente caindo no mundo do Desenvolvimento onde se apaixonou e não quis mais sair.</p>
+            <div class="m30"></div>
+
+            <div class="row">
+
+                <!-- speaker -->
+                <div class="col-md-4">
+                    <div class="speakers__speaker">
+                        <div class="speaker__avatar">
+                            <img src="dist/images/marcela.jpg" alt="Marcela Godoy">
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__title">
+                            Marcela Godoy
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__company">
+                            Back-end Developer at Eduzz
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__description">
+                            Marcela Godoy é desenvolvedora Back-end com graduação em Sistemas de Informação, já passou por várias áreas da TI, iniciando como Game Tester, pegando atalho pelo Design/UX e finalmente caindo no mundo do Desenvolvimento onde se apaixonou e não quis mais sair.
+                        </div>
+
+                        <div class="m10"></div>
+
+                        <div class="speaker__links">
+                            <a href="https://github.com/marcelagodoy" target="_blank">
+                                <i class="ti-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/marcelagodoy88" target="_blank">
+                                <i class="ti-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="talk">
-                  <img src="img/caio.png" class="speaker-img">
-                  <h2 class="talk-person"><a href="https://github.com/cacarrara" class="link" target="_blank">Caio Carrara</a></h2>
-                  Backend Developer at Olist
-                  <p class="talk-title">Talk <span class="equal"> = </span> Do Python ao Infinito e Além!</p>
-                  <p class="talk-bio">Caio Carra é desenvolvedor de software com 10 anos de experiência. Graduado pela FATEC Sorocaba tem passagem por uma dezena de empresas como Globo.com e ThoughtWorks. Trabalha com Python há 5 anos e atualmente é desenvolvedor com enfoque em liderança técnica.</p>
+
+                <!-- speaker -->
+                <div class="col-md-4">
+                    <div class="speakers__speaker">
+                        <div class="speaker__avatar">
+                            <img src="dist/images/caio.png" alt="Caio Carrara">
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__title">
+                            Caio Carrara
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__company">
+                            Back-end Developer at Olist
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__description">
+                            Caio Carra é desenvolvedor de software com 10 anos de experiência. Graduado pela FATEC Sorocaba tem passagem por uma dezena de empresas como Globo.com e ThoughtWorks. Trabalha com Python há 5 anos e atualmente é desenvolvedor com enfoque em liderança técnica.
+                        </div>
+
+                        <div class="m10"></div>
+
+                        <div class="speaker__links">
+                            <a href="https://github.com/cacarrara" target="_blank">
+                                <i class="ti-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/caiocarrara" target="_blank">
+                                <i class="ti-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="talk">
-                  <img src="img/rafael.png" class="speaker-img">
-                  <h2 class="talk-person"><a href="https://github.com/rafaelhenrique" class="link" target="_blank">Rafael Henrique</a></h2>
-                  Backend Developer at Olist
-                  <p class="talk-title">Talk <span class="equal"> = </span> Criando sua primeira aplicação Web em Python.</p>
-                  <p class="talk-bio">Rafael é apaixonado por software livre desde muito jovem, é bacharel em Ciência da Computação e aspirante a Mestre Yoda. Trabalha atualmente na Olist (tem vagas!) mas já passou por diversas empresas. Trabalha a mais de 10 anos com tecnologia e já atuou em diversas vertentes da computação em si.</p>
+
+                <!-- speaker -->
+                <div class="col-md-4">
+                    <div class="speakers__speaker">
+                        <div class="speaker__avatar">
+                            <img src="dist/images/rafael.jpg" alt="Rafael Henrique da Silva Correia">
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__title">
+                            Rafael Henrique
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__company">
+                            Back-end Developer at Olist
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__description">
+                            Rafael é apaixonado por software livre desde muito jovem, é bacharel em Ciência da Computação e aspirante a Mestre Yoda. Trabalha atualmente na Olist (tem vagas!) mas já passou por diversas empresas. Trabalha a mais de 10 anos com tecnologia e já atuou em diversas vertentes da computação em si.
+                        </div>
+
+                        <div class="m10"></div>
+
+                        <div class="speaker__links">
+                            <a href="https://github.com/rafaelhenrique" target="_blank">
+                                <i class="ti-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/rafael-henrique-da-silva-correia-5b367a35" target="_blank">
+                                <i class="ti-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="talk">
-                  <img src="img/casadei.jpeg" alt="" class="speaker-img">
-                  <h2 class="talk-person"><a href="https://github.com/vcasadei" class="link" target="_blank"> Vitor Casadei </a></h2>
-                  Software engineer at CESAR
-                  <p class="talk-title">Talk <span class="equal"> = </span> A definir </p>
-                  <p class="talk-bio">Vitor é organizador do SorcabaJS, graduado e mestre em ciência da computação pela UFSCAR, tem uma grande experiência em tecnologia, conhece muito sobre visão computacional, JavaScript, UX e muitos outros assuntos. </p>
+            </div>
+
+            <div class="m15"></div>
+
+            <div class="row">
+
+                <!-- speaker -->
+                <div class="col-md-4">
+                    <div class="speakers__speaker">
+                        <div class="speaker__avatar">
+                            <img src="dist/images/casadei.jpg" alt="Vitor Casadei">
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__title">
+                            Vitor Casadei
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__company">
+                            Software engineer at CESAR
+                        </div>
+
+                        <div class="m5"></div>
+
+                        <div class="speaker__description">
+                            Vitor é organizador do SorocabaJS, graduado e mestre em ciência da computação pela UFSCAR, tem uma grande experiência em tecnologia, conhece muito sobre visão computacional, JavaScript, UX e muitos outros assuntos.
+                        </div>
+
+                        <div class="m10"></div>
+
+                        <div class="speaker__links">
+                            <a href="https://github.com/vcasadei" target="_blank">
+                                <i class="ti-github"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/vitorcasadei" target="_blank">
+                                <i class="ti-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </section>
-          </section>
-    </body>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="m30"></div>
+
+    <div class="timeline">
+        <div class="title__section">
+            Timeline
+        </div>
+
+        <div class="m30"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 offset-md-3">
+                    <div class="timeline__item">
+                        <div class="timeline__hours">
+                            19h20
+                        </div>
+
+                        <div class="timeline__divider"></div>
+
+                        <div class="timeline__text">
+                            <b>Marcela Godoy</b>
+                            <div class="m5"></div>
+                            Carreira de desenvolvimento como back-end.
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__hours">
+                            20h00
+                        </div>
+
+                        <div class="timeline__divider"></div>
+
+                        <div class="timeline__text">
+                            <b>Caio Carrara</b>
+                            <div class="m5"></div>
+                            Do Python ao Infinito e Além!
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__hours">
+                            20h40
+                        </div>
+
+                        <div class="timeline__divider"></div>
+
+                        <div class="timeline__text">
+                            <b>SURPRISE</b>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__hours">
+                            21h00
+                        </div>
+
+                        <div class="timeline__divider"></div>
+
+                        <div class="timeline__text">
+                            <b>Rafael Henrique</b>
+                            <div class="m5"></div>
+                            Criando sua primeira aplicação Web em Python.
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__hours">
+                            21h40
+                        </div>
+
+                        <div class="timeline__divider"></div>
+
+                        <div class="timeline__text">
+                            <b>Vitor Casadei</b>
+                            <div class="m5"></div>
+                            Começando em desenvolvimento front-end.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- patrocinios -->
+    <div class="sponsorships --bg-effect">
+
+        <div class="container">
+
+            <div class="title__section --color-white">
+                Patrocinadores
+            </div>
+
+            <div class="m30"></div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="sponsorships__sponsorship">
+                        <a href="" target="_blank" title="NOME_PATRONINADOR">
+                            <img src="http://via.placeholder.com/200x100" alt="NOME_PATROCINADOR">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sponsorships__sponsorship">
+                        <a href="" target="_blank" title="NOME_PATRONINADOR">
+                            <img src="http://via.placeholder.com/200x100" alt="NOME_PATROCINADOR">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sponsorships__sponsorship">
+                        <a href="" target="_blank" title="NOME_PATRONINADOR">
+                            <img src="http://via.placeholder.com/200x100" alt="NOME_PATROCINADOR">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="sponsorships__sponsorship">
+                        <a href="" target="_blank" title="NOME_PATRONINADOR">
+                            <img src="http://via.placeholder.com/200x100" alt="NOME_PATROCINADOR">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="m30"></div>
+
+    <!-- mapa -->
+    <div class="map">
+
+        <div class="container">
+
+            <div class="title__section">
+                Como chegar?
+            </div>
+
+            <div class="m30"></div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="map"></div>
+                </div>
+            </div>
+
+            <div class="m30"></div>
+        </div>
+    </div>
+
+    <div class="m30"></div>
+
+    <!-- footer -->
+    <footer class="text-center">
+        <p>
+            IFSP Boituva, 2018
+        </p>
+    </footer>
+
+    <div class="m10"></div>
+
+    <script src="assets/js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR67DmaitrOxfWf2qFLBttcjo4ykji6kk&callback=initMap"></script>
+</body>
 </html>

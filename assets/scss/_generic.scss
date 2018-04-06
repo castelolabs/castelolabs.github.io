@@ -1,0 +1,27 @@
+.--button-disabled {
+    background: #eee !important;
+    border-color: #eee !important;
+    color: #777 !important;
+    cursor: no-drop !important;
+}
+
+.title__section {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.--bg-effect {
+    background: url(../images/bg-effect.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.--color-white {
+    color: #fff !important;
+}
