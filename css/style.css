@@ -85,6 +85,7 @@ body {
 
 .speaker {
   clear: both;
+  margin-top: 50px;
   display: block;
   width: 100%;
   float: none;
@@ -93,15 +94,14 @@ body {
 
 .talk {
   text-align: center;
-  padding: 5%;
+  padding: 2%;
   width: 100vh;
   color: white; }
   .talk a.link {
     padding: 1%;
     text-decoration: none;
     color: #B30F4F;
-    font-family: "Roboto";
-    background-color: white; }
+    font-family: "Roboto"; }
   .talk a.link:hover {
     border-radius: 0px;
     font-family: "Roboto";
@@ -114,15 +114,18 @@ body {
     width: 55%;
     cursor: pointer; }
   .talk .talk-person {
-    color: white; }
+    color: white;
+    background: #F8F8F2;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .talk .talk-title {
     font-weight: 400; }
   .talk .talk-bio {
     line-height: 1.8em; }
   .talk .link {
     color: white; }
-  .talk .simple-link {
-    color: #F8F8F2; }
 
 a.button-participe:hover {
   color: #B30F4F;
@@ -140,7 +143,8 @@ a.button-participe:hover {
     margin-top: 30px; }
     .speaker .talk {
       margin-top: 30px;
-      width: 90%; } }
+      width: 90%;
+      padding: 5%; } }
 
 @media screen and (max-width: 600px) {
   .code-highlight-infos {

@@ -112,6 +112,7 @@ body {
 }
 .speaker {
   clear: both;
+  margin-top: 50px;
   display: block;
   width: 100%;
   float: none;
@@ -120,7 +121,7 @@ body {
 }
 .talk {
   text-align: center;
-  padding: 5%;
+  padding: 2%;
   width: 100vh;
   color: white;
 
@@ -129,7 +130,6 @@ body {
     text-decoration: none;
     color: $red;
     font-family: $textFont;
-    background-color: white;
   }
   a.link:hover {
     border-radius: 0px;
@@ -147,6 +147,11 @@ body {
   }
   .talk-person {
     color: white;
+    background: $white;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .talk-title {
     font-weight: 400;
@@ -156,9 +161,6 @@ body {
   }
   .link {
     color: white;
-  }
-  .simple-link{
-    color: $white;
   }
 }
 a.button-participe:hover {
@@ -179,6 +181,7 @@ a.button-participe:hover {
     .talk {
       margin-top: 30px;
       width: 90%;
+      padding: 5%;
     }
   }
 }
